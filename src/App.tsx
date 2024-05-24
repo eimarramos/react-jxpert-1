@@ -1,9 +1,9 @@
 import "./App.css";
-import { ListComponent } from "./components/list/list-component";
+import { NavbarComponent } from "./components/navbar/navbar-component";
 
 function App() {
   return <>
-  <ListComponent></ListComponent>
+  <NavbarComponent></NavbarComponent>
   </>
 }
 
