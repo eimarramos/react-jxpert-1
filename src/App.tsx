@@ -2,7 +2,9 @@ import "./App.css";
 import { ListComponent } from "./components/list/list-component";
 
 function App() {
-  return <ListComponent></ListComponent>;
+  return <>
+  <ListComponent></ListComponent>
+  </>
 }
 
 export default App;
