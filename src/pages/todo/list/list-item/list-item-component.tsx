@@ -10,16 +10,10 @@ type props = {
 
 export const ListItemComponent: React.FC<props> = ({ isDone, children, onChildClick}) => {
   //const activeClass = isDone ? 'is-done' : undefined
-  const getCustomStyles = () =>{
-    if(isDone){
-      return {color: 'red'}
-    }
-    return {color: 'blue'}
-  }
 
   return [
-    <li className={styles.red} style={getCustomStyles()} onClick={onChildClick}>
-      {children}
-    </li>
+    <label className={styles.checkboxes__label}>
+         Melisandre<input type="checkbox" id="1" value="2_checkbox" />
+    </label>
   ]
 };

@@ -8,7 +8,7 @@ const childClick = (itemIndex: number) => {
 };
 
 export const ListComponent = () => (
-  <ul className={styles.red}>
+  <div className={styles.checkboxes}>
     {
       items2.map((item, index) => {
         return[
@@ -20,5 +20,5 @@ export const ListComponent = () => (
         ]
       })
     }
-  </ul>
+  </div>
 );

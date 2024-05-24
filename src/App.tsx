@@ -1,9 +1,9 @@
 import "./App.css";
-import { NavbarComponent } from "./components/navbar/navbar-component";
+import { ListComponent } from "./pages/todo/list/list-component";
 
 function App() {
   return <>
-  <NavbarComponent></NavbarComponent>
+  <ListComponent></ListComponent>
   </>
 }
 
