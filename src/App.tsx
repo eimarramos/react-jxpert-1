@@ -1,10 +1,12 @@
 import "./App.css";
-import { ListComponent } from "./pages/todo/list/list-component";
+import { TodoComponent } from "./pages/todo/todo-component";
 
 function App() {
-  return <>
-  <ListComponent></ListComponent>
-  </>
+  return (
+    <>
+      <TodoComponent></TodoComponent>
+    </>
+  );
 }
 
 export default App;
