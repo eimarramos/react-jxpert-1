@@ -1,6 +1,6 @@
 import { ListItemComponent } from "./list-item/list-item-component";
 import styles from "./list-component.module.css";
-import { Task } from "../../../../types/task";
+import { Task } from "../../../../types";
 
 type Props = {
   tasks: Task[];

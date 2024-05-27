@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./list-item-component.module.css";
-import { Task } from "../../../../../types/task";
+import { Task } from "../../../../../types";
 
 type Props = {
   task: Task;
