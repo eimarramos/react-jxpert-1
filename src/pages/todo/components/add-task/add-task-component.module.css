@@ -1,0 +1,27 @@
+.form__name_input {
+  border-radius: 5px;
+  padding: 8px;
+  width: 400px;
+  background-color: #f1f0ec;
+  border: 0.5px solid lightgray;
+}
+
+.form__name_button {
+  margin-left: 5px;
+  width: 76px;
+  background-color: #393830;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 5px;
+  color: white;
+  box-sizing: border-box;
+  transition: background-color 0.2s;
+  border: 3px solid #393830;
+}
+
+.form__name_button:hover {
+  background-color: #f1f0ec;
+  color: #393830;
+  transform: scale(1.02);
+  cursor: pointer;
+}

@@ -1,13 +1,16 @@
 import { ListItemComponent } from "./list-item/list-item-component";
 import styles from "./list-component.module.css";
-import { Tasks } from "../../../../data/tasks-data";
+import { Task } from "../../../../types/task";
 
-const items = Tasks;
+type Props = {
+  tasks: Task[];
+  toggleTask: (id: number) => void;
+};
 
-export const ListComponent: React.FC = () => (
+export const ListComponent: React.FC<Props> = ({ tasks, toggleTask }) => (
   <div className={styles.checkboxes}>
-    {items.map((item, index) => {
-      return [<ListItemComponent key={index} task={item}></ListItemComponent>];
-    })}
+    {tasks.map((task) => (
+      <ListItemComponent key={task.id} task={task} toggleTask={toggleTask} />
+    ))}
   </div>
 );

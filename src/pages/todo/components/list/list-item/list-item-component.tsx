@@ -1,22 +1,19 @@
 import React from "react";
 import styles from "./list-item-component.module.css";
-import { Task } from "../../../../../models/task";
+import { Task } from "../../../../../types/task";
 
-type props = {
+type Props = {
   task: Task;
+  toggleTask: (id: number) => void;
 };
 
-export const ListItemComponent: React.FC<props> = ({ task }) => {
-  return [
-    <label className={styles.checkboxes__label}>
-      {task.name}
-      <input
-        type="checkbox"
-        defaultChecked={task.isDone}
-        onClick={() => {
-          task.isDone = !task.isDone;
-        }}
-      />
-    </label>,
-  ];
-};
+export const ListItemComponent: React.FC<Props> = ({ task, toggleTask }) => (
+  <label className={styles.checkboxes__label}>
+    {task.name}
+    <input
+      type="checkbox"
+      checked={task.isDone}
+      onChange={() => toggleTask(task.id)}
+    />
+  </label>
+);
